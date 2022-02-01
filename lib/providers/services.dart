@@ -18,6 +18,7 @@ class Services with ChangeNotifier {
     Service(Description: 'xyz', Service_Name: 'demo 1', Service_ID: '1'),
     Service(Description: 'xyz', Service_Name: 'demo 2', Service_ID: '2'),
     Service(Description: 'xyz', Service_Name: 'demo 3', Service_ID: '3'),
+    Service(Description: 'xyz', Service_Name: 'demo 4', Service_ID: '4'),
   ];
 
   List<Service> get service {

@@ -1,9 +1,26 @@
 import 'package:flutter/material.dart';
+import 'package:fyp/providers/User.dart';
 
 import './expert.dart';
 
 class Experts with ChangeNotifier {
-  List<Expert> _experts = [];
+  final List<Expert> _experts = [
+    Expert(
+        expertID: 1,
+        userID: 2,
+        userObj: User(uID: '2', role: 'client', dateOfBirth: 'farrukh'),
+        serviceID: 1),
+    Expert(
+        expertID: 2,
+        userID: 3,
+        userObj: User(uID: '3', role: 'client', dateOfBirth: 'samad'),
+        serviceID:1),
+    Expert(
+        expertID: 3,
+        userID: 4,
+        userObj: User(uID: '4', role: 'client', dateOfBirth: 'vaneeza'),
+        serviceID: 1)
+  ];
 
   List<Expert> get experts {
     return [..._experts];

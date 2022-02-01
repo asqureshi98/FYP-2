@@ -4,7 +4,7 @@ class Expert {
   final int expertID;
   //final String description;
   double rating;
-  final User userObj;
+  User userObj;
   final int userID;
   final int serviceID;
 
@@ -13,7 +13,7 @@ class Expert {
     //required this.description,
     required this.userID,
     this.rating = 0,
-    required this.userObj,
+    required this.userObj, 
     required this.serviceID,
   });
 }
